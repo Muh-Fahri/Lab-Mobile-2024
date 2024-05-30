@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostingFragment"
+    android:id="@+id/PostingFragment"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postingan Baru"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+
+        <ImageView
+            android:id="@+id/masukkan_foto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alpha="0.2"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/baseline_photo_camera_24"/>
+
+
+            <EditText
+                android:id="@+id/masukkan_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:background="@null"
+                android:textSize="15dp"
+                android:textColorHint="@color/white"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:hint="Masukkan Konten Postingan..."/>
+
+        <Button
+            android:id="@+id/button_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Posting"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"/>
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

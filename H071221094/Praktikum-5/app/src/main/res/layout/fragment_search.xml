@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment"
+    android:orientation="vertical"
+    android:background="@color/red"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Search"
+       android:layout_marginBottom="20dp"
+       android:fontFamily="@font/fontf1"
+       android:textSize="40dp"
+       android:textColor="@color/white"/>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="@color/white"
+       android:layout_marginBottom="20dp">
+
+
+
+       <androidx.appcompat.widget.SearchView
+           android:id="@+id/search_view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:queryHint="Hello"
+           app:iconifiedByDefault="false" />
+   </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_searchingPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
